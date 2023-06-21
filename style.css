@@ -1,0 +1,118 @@
+/* #000633 banner color*/
+/* #626bee link color   */
+/* #9092da normal links color  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --link-color: #626bee;
+    --white-color: #ffffff;
+    --normal-link: #9092da;
+    --bg-color: #000633;
+    --overall-padding: 20px;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+.wrapper{
+    background: var(--bg-color);
+    padding: var(--overall-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.wrapper #header{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: var(--overall-padding);
+}
+.wrapper #header .head-logo{
+    
+}
+.wrapper #header .head-menu{
+    
+    display: flex;
+    flex-grow: 0.1;
+    justify-content: space-around;
+    align-items: center;
+}
+.wrapper #header .head-menu .left-menu{
+    
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.wrapper #header .head-menu .left-menu a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--white-color);
+}
+.wrapper #header .head-menu .left-menu a:first-child:hover{
+    text-decoration: underline;
+}
+.wrapper #header .head-menu .right-menu{
+    width: 50%;
+    
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.wrapper #header .head-menu .right-menu a{
+    color: var(--white-color);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.wrapper #header .head-menu .right-menu a:first-child:hover{
+    text-decoration: underline;
+}
+.wrapper .banner{
+    
+    padding: var(--overall-padding);
+}
+.wrapper .banner main .banner-1{
+    width: 100%;
+    
+    text-align: center;
+    padding: var(--overall-padding);
+}
+
+.wrapper .banner .banner-1 a{
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #626bee;
+    border-bottom: 1px solid;
+    transition: border-bottom 4s ease;
+}
+.wrapper .banner .banner-1 a:hover{
+    border-bottom: 0px transparent;
+}
+.wrapper .banner main .banner-text{
+    
+    padding: var(--overall-padding);
+    font-size: 38px;
+    text-align: center;
+    color: var(--white-color);
+    font-weight: bolder;
+    line-spacing: 40px;
+}
+.wrapper .banner .banner-bottom{
+    
+    padding: var(--overall-padding);
+    text-align: center;
+}
+.wrapper .banner .banner-bottom span{
+    color: #9092da;
+    margin: 2px
+}
+.wrapper .banner .banner-bottom span:last-child a{
+    text-decoration: none;
+    color: #9092da;
+}
+.wrapper .banner .banner-bottom span:last-child a:hover{
+    text-decoration: underline;
+}
